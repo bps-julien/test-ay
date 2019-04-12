@@ -10,7 +10,7 @@
 <body>
     <main>
         <section class="form-container">
-            <form class="form">
+            <form method="POST" action="https://httpbin.org/anything" class="form">
                 <img class="banner" src="banner@2x.png">
                 <div class="title">
                     <h1>Student subscription</h1>
@@ -20,60 +20,60 @@
                     <div class="field">
                         <label>First name</label>
                         <div class="inputs">
-                            <input type="text">
+                            <input name="firstname" type="text" required>
                         </div>
                     </div>
                     <div class="field">
                         <label>Last Name</label>
                         <div class="inputs">
-                            <input type="text">
+                            <input name="lastname" type="text" required>
                         </div>
                     </div>
                     <div class="field">
                         <label>Course</label>
                         <div class="inputs">
-                            <input type="text">
+                            <input name="course" type="text" required>
                         </div>
                     </div>
                     <div class="field field-dob">
                         <label>Date of birth</label>
                         <div class="inputs">
-                            <input type="number" placeholder="DD" min="1" max="31">
+                            <input name="dob_day" type="number" placeholder="DD" min="1" max="31">
                             <span>/</span>
-                            <input type="number" placeholder="MM" min="1" max="12">
+                            <input name="dob_month" type="number" placeholder="MM" min="1" max="12">
                             <span>/</span>
-                            <input class="year" type="number" placeholder="YYYY" min="1900" max="2019">
+                            <input name="dob_year" class="year" type="number" placeholder="YYYY" min="1900" max="2019">
                         </div>
                     </div>
                     <div class="field field-col-3">
                         <label>Gender</label>
                         <div class="inputs flex">
-                            <button class="btn">Man</button>
-                            <button class="btn">Woman</button>
-                            <button class="btn">Non-binary</button>
+                            <button type="button" class="btn">Man</button>
+                            <button type="button" class="btn">Woman</button>
+                            <button type="button" class="btn">Non-binary</button>
                         </div>
                     </div>
                     <div class="field field-col-2">
                         <label>Option</label>
                         <div class="subtitle">Select all desired options</div>
                         <div class="inputs flex">
-                            <button class="btn">Language</button>
-                            <button class="btn selected">Art</button>
-                            <button class="btn">Music</button>
-                            <button class="btn">Science</button>
+                            <button type="button" class="btn">Language</button>
+                            <button type="button" class="btn">Art</button>
+                            <button type="button" class="btn">Music</button>
+                            <button type="button" class="btn">Science</button>
                         </div>
                     </div>
                     <div class="field field-col-7">
                         <label>Day</label>
                         <div class="subtitle">Select desired days</div>
                         <div class="inputs flex">
-                            <button class="botn">Mon</button>
-                            <button class="botn">Tue</button>
-                            <button class="botn">Wed</button>
-                            <button class="botn">Thu</button>
-                            <button class="botn">Fri</button>
-                            <button class="botn">Sat</button>
-                            <button class="botn">Sun</button>
+                            <button type="button" class="botn">Mon</button>
+                            <button type="button" class="botn">Tue</button>
+                            <button type="button" class="botn">Wed</button>
+                            <button type="button" class="botn">Thu</button>
+                            <button type="button" class="botn">Fri</button>
+                            <button type="button" class="botn">Sat</button>
+                            <button type="button" class="botn">Sun</button>
                         </div>
                     </div>
                     <div class="field field-submit">
@@ -90,5 +90,6 @@
             </form>
         </section>
     </main>
+    <script src="test-ay.js"></script>
 </body>
 </html>

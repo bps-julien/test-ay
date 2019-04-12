@@ -296,6 +296,10 @@ button.selected:before {
   margin-right: 4px;
 }
 
+.field.field-col-7 button.selected:before {
+  display: none;
+}
+
 button.selected {
   color: #A1AF3E;
   border-color: #A1AF3E;
