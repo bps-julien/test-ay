@@ -220,11 +220,40 @@ img {
   width: 100%;
 }
 
+
 .form {
   display: block;
   width: 576px;
   margin: auto;
   background: #F7F7F7;
+}
+
+h1 {
+  margin-top: 11px;
+  font-size: 36px;
+  color: #FCAB10;
+  text-align: center;
+  height: 43px;
+  font-family: inter;
+  
+}
+
+.subtitle{
+  text-align: center;
+  height: 15px;
+} 
+
+.fields {
+  padding-left: 98px;
+  padding-right: 98px;
+}
+
+.field {
+  line-height: 3;
+}
+
+div.subtitle-2{
+  line-height: 50%;
 }
 
 .ic {
@@ -234,6 +263,12 @@ img {
   background: url(ic-check.svg) no-repeat center/contain;
 }
 
+.subtitle-2 {
+  font-size: 12px;
+  height: 15px;
+  font-style: italic;
+}
+
 input,
 button {
   background: #fff;
@@ -241,6 +276,7 @@ button {
   border-radius: 4px;
   font-size: 12px;
   height: 38px;
+
 }
 
 button.selected:before {
@@ -248,7 +284,12 @@ button.selected:before {
   display: inline-block;
   width: 11px;
   height: 11px;
-  background: url(ic-check.svg) no-repeat center/contain;
+  background: url(ic-check.svg) no-repeat center/contain;;
+}
+
+button.selected {
+  border-color: #A1AF3E;
+  color: #A1AF3E;
 }
 
 input {
@@ -290,6 +331,41 @@ input {
 }
 
 .field.field-col-2 button {
+  margin-top: 100px;
   width: 176px;
 }
 
+.field.field-col-4 .inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.field.field-col-4 button {
+  width: 48px;
+}
+
+.field.field-submit .inputs{
+  display: flex;
+  justify-content: center;
+}
+
+.field.field-submit button{
+  margin-top: 30px;
+  color: #F7F7F7;
+  background: #D7263D;
+  width: 380px;
+  height: 46px;
+}
+
+.field.field-reset .inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.field.field-reset button{
+  color: #3C91E6;
+  background-color: #F7F7F7;
+  border-color: #F7F7F7;
+  text-decoration: underline; 
+}
